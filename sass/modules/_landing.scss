@@ -1,0 +1,331 @@
+.hero-section {
+    background: $dark-blue;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    &__background {
+        background: url(../images/landing/background.svg);
+        background-size: cover;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    &__content {
+        bottom: 25%;
+        color: white;
+        float: left;
+        left: 0;
+        margin: 0 auto;
+        max-width: 90%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: 580px;
+    }
+    &__primary-title {
+        color: white;
+        font-family: $bold-font;
+        font-size: 3.5rem;
+        margin: 0;
+        overflow: hidden;
+        span {
+            display: block;
+        }
+    }
+    &__secondary-title {
+        color: white;
+        font-size: 2.2rem;
+        font-weight: normal;
+        line-height: 1.3;
+    }
+    &__call-to-action {
+        margin-top: 40px;
+    }
+    &__icon {
+        height: 72px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        overflow: hidden;
+        width: 72px;
+        img {
+            width: 100%;
+        }
+    }
+    &__play-again {
+        bottom: 30px;
+        color: white;
+        cursor: pointer;
+        left: 0;
+        margin: 0 auto;
+        opacity: 0.4;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: 120px;
+        &:hover {
+            opacity: 1;
+        }
+        svg {
+            margin-right: 5px;
+        }
+    }
+}
+
+.features-illustration {
+    position: relative;
+}
+
+.feature-item {
+    background-color: white;
+    border-radius: $button-default-radius;
+    box-shadow: 0 3px 12px -2px rgba(0, 0, 0, .08);
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 30px 25px 25px;
+    text-align: center;
+    @include screen(small) {
+        margin-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    &__icon {
+        margin: 0 auto;
+        width: 45px;
+        height: 45px;
+    }
+    &__title {
+        color: $dark-blue;
+        font-size: 1.6rem;
+        margin-bottom: 0;
+        margin-top: 20px;
+        small {
+            color: $green;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    &__description {
+        font-size: 1.3rem;
+        line-height: 1.3;
+        margin-bottom: 0;
+        margin-top: 10px;
+        @include screen(small) {
+            font-size: 1.5rem;
+        }
+    }
+    &--dark {
+        background: lighten($dark-blue, 2%);
+        .feature-item__title {
+            color: white;
+        }
+    }
+}
+
+.home-section {
+    position: relative;
+    &--customers {
+        position: relative;
+        background-color: $dark-blue;
+    }
+    &--dark {
+        background-color: $dark-blue;
+    }
+    &__divider {
+        background: darken($lighter-gray, 5%);
+        height: 1px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+    &--features {
+        background-color: #fafafa;
+        padding: 120px 0 90px;
+        border-top: 1px solid whitesmoke;
+        @include screen(small) {
+            padding: 50px 0;
+        }
+    }
+    &__checkout-demo {
+        margin: 100px 0 0 100px;
+        @include screen(mid) {
+            margin: 100px 0 0 30px;
+        }
+        @include screen(small) {
+            margin: 0;
+        }
+    }
+    &__feature-items {
+        margin: 50px 0;
+        @include screen(small) {
+            margin: 0;
+        }
+    }
+    &--intro {
+        padding: 50px 0;
+        &:before {
+            background: url(../images/lines/right-corner.svg) no-repeat;
+            background-size: 100% auto;
+            content: "";
+            display: block;
+            opacity: 0.3;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 40%;
+            height: 100%;
+            z-index: 0;
+        }
+        @include screen(mid) {
+            padding: 50px 20px;
+        }
+    }
+    &__setup-steps {
+        margin: 40px 0 100px;
+        @include screen(small) {
+            margin: 40px 0;
+        }
+    }
+}
+
+.home-section-header {
+    margin-bottom: 40px;
+    margin-top: 80px;
+    max-width: 100%;
+    width: 600px;
+    @include screen(small) {
+        margin: 0;
+    }
+    &--centered {
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__primary-title {
+        color: $dark-blue;
+        font-family: $bold-font;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1.2;
+        margin: 0;
+        .home-section--dark & {
+            color: white;
+        }
+    }
+    &__secondary-title {
+        font-size: 1.8rem;
+        font-weight: normal;
+        line-height: 1.6;
+        .home-section--dark & {
+            color: #c4f0ff;
+        }
+    }
+}
+
+.home-section-footer {
+    margin-top: 50px;
+    text-align: center;
+    &--features {
+        margin-top: 90px;
+        @include screen(small) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.customers-section {
+    padding: 45px 0 75px;
+    @include screen(mid) {
+        padding: 45px 20px 75px;
+    }
+    @include screen(small) {
+        padding: 60px 0;
+    }
+    &__logos-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        height: 100%;
+        overflow: hidden;
+        @include screen(small) {
+            position: relative;
+            height: 300px;
+            left: 0;
+        }
+        @include screen(mid) {
+            left: auto;
+            right: 0;
+        }
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: -4px;
+            left: 0;
+            pointer-events: none;
+            background-size: contain;
+            background-image: linear-gradient(to bottom, rgba(1, 27, 51, 0), rgba(1, 27, 51, 1) 90%);
+            width: 100%;
+            height: 50%;
+        }
+        &:before {
+            top: 0;
+            bottom: auto;
+            background-image: linear-gradient(to top, rgba(1, 27, 51, 0), rgba(1, 27, 51, 1) 90%);
+        }
+    }
+    &__logos {
+        height: 500%;
+        width: 100%;
+        position: relative;
+        background-image: url(../images/landing/clients/clients.png);
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+        opacity: .24;
+        animation: scroll-customers 250s infinite;
+        -webkit-animation: scroll-customers 250s infinite;
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            background-image: url(../images/landing/clients/clients@2x.png);
+        }
+    }
+}
+
+.setup-steps-container {
+    margin: 30px 0 0;
+}
+
+.setup-step {
+    position: relative;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    &::last-child {
+        margin-bottom: 0;
+    }
+    &__number {
+        left: -25px;
+        position: absolute;
+        top: 10px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        span {
+            background: $green;
+            border-radius: 6px;
+            display: block;
+            height: 3px;
+            margin-bottom: 2px;
+            width: 14px;
+        }
+    }
+    &__title {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+    &__message {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        margin-top: 5px;
+    }
+    &--list {
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,324 @@
+.hero-section {
+    &--company {
+        height: 800px;
+        @include screen(small) {
+            height: 500px;
+        }
+        .hero-section__content {
+            bottom: 10%;
+            width: 400px;
+            max-width: 100%;
+            z-index: 3;
+            @include screen(small) {
+                bottom: 20px;
+            }
+        }
+        .hero-section__secondary-title {
+            font-size: 2.1rem;
+            @include screen(small) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    &--careers {
+        height: auto;
+        position: relative;
+        .hero-section__content {
+            float: none;
+            position: relative;
+            margin: 150px auto 100px;
+            width: 400px;
+        }
+    }
+}
+
+.hero-video {
+    background: $dark-blue;
+    height: 75%;
+    left: 50%;
+    position: absolute;
+    top: 25%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 450px;
+    max-width: 100%;
+    @include screen(small) {
+        height: 500px;
+        top: 70px;
+        width: 100%;
+    }
+    &:after,
+    &:before {
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+    }
+    &:after {
+        top: 0;
+        bottom: 35%;
+        background: linear-gradient(90deg, #011b33, rgba(1, 27, 51, 0.5), rgba(1, 27, 51, 0));
+        background: -webkit-linear-gradient(90deg, #011b33, rgba(1, 27, 51, 0.5), rgba(1, 27, 51, 0));
+    }
+    &:before {
+        top: 64%;
+        bottom: 0;
+        background: $dark-blue;
+        z-index: 2;
+    }
+    &__logo {
+        height: 80px;
+        width: 80px;
+        z-index: 2;
+        position: absolute;
+        bottom: 45%;
+        left: 50%;
+        background-color: $dark-blue;
+        box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transform: translate(-50%, 50%);
+        border-radius: 50%;
+        img {
+            width: 30px;
+            margin-top: 25px;
+        }
+    }
+    &__file {
+        height: 100%;
+        width: 100%;
+        border-radius: 2px;
+        object-fit: cover;
+        z-index: 1;
+        box-shadow: 0 3px 12px -2px rgba(0, 0, 0, 0.08);
+        @include screen(small) {
+            display: none;
+        }
+    }
+    &__image-backup {
+        background: url('../images/company/sf.jpg');
+        background-size: cover;
+        display: none;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        @include screen(small) {
+            display: block;
+        }
+    }
+    &__annotation {
+        padding: 20px;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        h5,
+        h6 {
+            color: white;
+            margin: 0 0 5px 0;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+        &__right {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        @include screen(small) {
+            display: none;
+        }
+    }
+}
+
+.company-section {
+    &--light {
+        background: #FAFAFA;
+    }
+    &--dark {
+        background: $dark-blue;
+        color: #c4f0ff;
+    }
+    &--empty {
+        padding: 200px 0;
+    }
+    &--team {
+        padding: 100px 0 100px;
+        position: relative;
+        border-top: 1px solid whitesmoke;
+    }
+    &--story {
+        padding: 100px 0 100px;
+        position: relative;
+        @include screen(small) {
+            padding: 50px 0;
+        }
+    }
+    &__copy {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    &__call-to-action {
+        margin-top: 30px;
+    }
+    &--job {
+        margin: 100px 0;
+        @include screen(small) {
+            margin: 50px 0;
+        }
+    }
+    &--assets {
+        padding: 100px 0;
+        @include screen(small) {
+            padding: 50px 0;
+        }
+    }
+    &__divider {
+        background: darken($lighter-gray, 5%);
+        height: 1px;
+        margin-bottom: 100px;
+        width: 100%;
+        @include screen(small) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.company-section-header {
+    position: relative;
+    &--centered {
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+        width: 600px;
+    }
+    &__primary-title,
+    &__heavy-title {
+        color: $dark-blue;
+        font-family: $bold-font;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1.2;
+        margin: 0 0 20px;
+        .company-section--dark & {
+            color: white;
+        }
+    }
+    &__heavy-title {
+        font-size: 4.5rem;
+        line-height: 1;
+        margin: 20px 0;
+        @include screen(small) {
+            font-size: 4rem;
+        }
+    }
+    &__secondary-title {
+        font-size: 2rem;
+        font-weight: normal;
+        line-height: 1.4;
+        margin: 0 0 20px;
+        .company-section--dark & {
+            color: #c4f0ff;
+        }
+        .company-section--story & {
+            color: #003767;
+        }
+    }
+}
+
+.team-members {
+    margin-top: 50px;
+}
+
+.team-member {
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 30px;
+    margin: 10px 0;
+    text-align: center;
+    padding: 30px 0;
+    @include screen(small) {
+        padding: 0;
+    }
+    .company-section--dark & {
+        background: lighten($dark-blue, 2%);
+        .team-member__name {
+            color: white;
+        }
+    }
+    &__name {
+        color: #003767;
+        font-size: 1.6rem;
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    &__role {
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+}
+
+.team-member__image {
+    background-position: center;
+    background-size: 100%;
+    border-radius: 1000px;
+    cursor: pointer;
+    display: block;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+    @include screen(small) {
+        height: 100px;
+        width: 100px;
+    }
+    .team-member:hover & {
+        // -webkit-filter: grayscale(0);
+    }
+}
+
+.investors {
+    margin-top: 15px;
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    img {
+        max-width: 100%;
+        width: 500px;
+    }
+}
+
+.company-perks {
+    margin-top: 40px;
+    li {
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11);
+        display: inline-block;
+        font-size: 1.4rem;
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+}
+
+.brand {
+    max-width: 500px;
+}
+
+.brand-image {
+    padding: 20px 0;
+    img {
+        max-height: 30px;
+    }
+    &__label {
+        float: right;
+    }
+    &--horizontal {
+        img {
+            max-height: 100%;
+            max-width: 200px;
+        }
+    }
+}

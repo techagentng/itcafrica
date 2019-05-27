@@ -1,0 +1,116 @@
+.clear {
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 0 20px;
+    width: 100%;
+    &--sm {
+        max-width: 760px;
+    }
+    &--md {
+        max-width: 960px;
+    }
+    &--lg {
+        max-width: 1240px;
+    }
+}
+
+.grid {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    &--flex {
+        display: flex;
+        @include screen(small) {
+            display: block;
+        }
+    }
+    &--with-gutters {
+        margin-left: -8px;
+        width: calc(100% + 16px);
+    }
+}
+
+.grid__column {
+    float: left;
+    &--12 {
+        width: 100%;
+    }
+    &--11 {
+        width: 100% * 11 / 12;
+    }
+    &--10 {
+        width: 100% * 5 / 6;
+    }
+    &--9 {
+        width: 75%;
+    }
+    &--8 {
+        width: 100% * 2 / 3;
+    }
+    &--7 {
+        width: 100% * 7 / 12;
+    }
+    &--6 {
+        width: 50%;
+    }
+    &--5 {
+        width: 100% * 5 / 12;
+    }
+    &--4 {
+        width: 100% * 1 / 3;
+    }
+    &--3 {
+        width: 25%;
+    }
+    &--20 {
+        width: 20%;
+    }
+    &--2 {
+        width: 100% * 1 / 6;
+    }
+    &--1 {
+        width: 100% * 1 / 12;
+    }
+    &--relative {
+        position: relative;
+    }
+    &--centered {
+        float: none;
+        margin: 0 auto;
+    }
+    .grid--with-gutters & {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .grid--flex & {
+        display: flex;
+    }
+    &--offset-3 {
+        margin-left: 25%;
+    }
+}
+
+.grid__column {
+    @include screen(small) {
+        width: 100%;
+        &--5-s {
+            width: 100% * 5 / 12;
+        }
+        &--6-s {
+            width: 50%;
+        }
+        &--7-s {
+            width: 100% * 7 / 12;
+        }
+    }
+}
+
+.setup-step-item {
+    &__number {
+        position: absolute;
+    }
+}

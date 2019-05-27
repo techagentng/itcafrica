@@ -1,0 +1,348 @@
+.svg {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+
+    &--small {
+        height: 12px;
+        width: 12px;
+    }
+
+    &--large {
+        height: 72px;
+        width: 72px;
+    }
+}
+.svg--calculator {
+    background: url("../images/icons/sprite.svg") 0 60% no-repeat;
+}
+
+.svg--calculator-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--card {
+    background: url("../images/icons/sprite.svg") 50% 80% no-repeat;
+}
+
+.svg--card-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--card-small {
+    background: url("../images/icons/sprite.svg") 100% 34.05797101449275% no-repeat;
+}
+
+.svg--card-small-dims {
+    width: 12px;
+    height: 12px;
+}
+
+.svg--cards {
+    background: url("../images/icons/sprite.svg") 0 100% no-repeat;
+}
+
+.svg--cards-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--check {
+    background: url("../images/icons/sprite.svg") 99.3103448275862% 19.834710743801654% no-repeat;
+}
+
+.svg--check-dims {
+    width: 46px;
+    height: 46px;
+}
+
+.svg--cheers {
+    background: url("../images/icons/sprite.svg") 50% 20% no-repeat;
+}
+
+.svg--cheers-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--custom {
+    background: url("../images/icons/sprite.svg") 50% 40% no-repeat;
+}
+
+.svg--custom-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--cv {
+    background: url("../images/icons/sprite.svg") 0 0 no-repeat;
+}
+
+.svg--cv-dims {
+    width: 72px;
+    height: 72px;
+}
+
+.svg--date {
+    background: url("../images/icons/sprite.svg") 16.666666666666668% 60% no-repeat;
+}
+
+.svg--date-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--date-small {
+    background: url("../images/icons/sprite.svg") 96.29629629629629% 34.05797101449275% no-repeat;
+}
+
+.svg--date-small-dims {
+    width: 12px;
+    height: 12px;
+}
+
+.svg--decision-tree {
+    background: url("../images/icons/sprite.svg") 50% 60% no-repeat;
+}
+
+.svg--decision-tree-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--easy-integration {
+    background: url("../images/icons/sprite.svg") 66.66666666666667% 0 no-repeat;
+}
+
+.svg--easy-integration-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--export {
+    background: url("../images/icons/sprite.svg") 66.66666666666667% 20% no-repeat;
+}
+
+.svg--export-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--fast {
+    background: url("../images/icons/sprite.svg") 66.66666666666667% 40% no-repeat;
+}
+
+.svg--fast-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--flexible {
+    background: url("../images/icons/sprite.svg") 66.66666666666667% 60% no-repeat;
+}
+
+.svg--flexible-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--infrastructure {
+    background: url("../images/icons/sprite.svg") 0 80% no-repeat;
+}
+
+.svg--infrastructure-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--libraries {
+    background: url("../images/icons/sprite.svg") 16.666666666666668% 80% no-repeat;
+}
+
+.svg--libraries-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--magic-hat {
+    background: url("../images/icons/sprite.svg") 27.272727272727273% 0 no-repeat;
+}
+
+.svg--magic-hat-dims {
+    width: 72px;
+    height: 72px;
+}
+
+.svg--multi-business {
+    background: url("../images/icons/sprite.svg") 25% 30% no-repeat;
+}
+
+.svg--multi-business-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--multicurrency {
+    background: url("../images/icons/sprite.svg") 66.66666666666667% 80% no-repeat;
+}
+
+.svg--multicurrency-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--network {
+    background: url("../images/icons/sprite.svg") 83.33333333333333% 0 no-repeat;
+}
+
+.svg--network-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--next-day-payouts {
+    background: url("../images/icons/sprite.svg") 83.33333333333333% 20% no-repeat;
+}
+
+.svg--next-day-payouts-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--people {
+    background: url("../images/icons/sprite.svg") 83.33333333333333% 40% no-repeat;
+}
+
+.svg--people-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--play-small {
+    background: url("../images/icons/sprite.svg") 92.5925925925926% 34.05797101449275% no-repeat;
+}
+
+.svg--play-small-dims {
+    width: 12px;
+    height: 12px;
+}
+
+.svg--plugins {
+    background: url("../images/icons/sprite.svg") 83.33333333333333% 80% no-repeat;
+}
+
+.svg--plugins-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--price-tag {
+    background: url("../images/icons/sprite.svg") 0 33.333333333333336% no-repeat;
+}
+
+.svg--price-tag-dims {
+    width: 72px;
+    height: 72px;
+}
+
+.svg--recurring {
+    background: url("../images/icons/sprite.svg") 16.666666666666668% 100% no-repeat;
+}
+
+.svg--recurring-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--reporting {
+    background: url("../images/icons/sprite.svg") 33.333333333333336% 100% no-repeat;
+}
+
+.svg--reporting-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--retry {
+    background: url("../images/icons/sprite.svg") 50% 100% no-repeat;
+}
+
+.svg--retry-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--safe {
+    background: url("../images/icons/sprite.svg") 66.66666666666667% 100% no-repeat;
+}
+
+.svg--safe-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--security {
+    background: url("../images/icons/sprite.svg") 83.33333333333333% 100% no-repeat;
+}
+
+.svg--security-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--security-small {
+    background: url("../images/icons/sprite.svg") 88.88888888888889% 34.05797101449275% no-repeat;
+}
+
+.svg--security-small-dims {
+    width: 12px;
+    height: 12px;
+}
+
+.svg--split {
+    background: url("../images/icons/sprite.svg") 83.33333333333333% 60% no-repeat;
+}
+
+.svg--split-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--subscribe {
+    background: url("../images/icons/sprite.svg") 33.333333333333336% 60% no-repeat;
+}
+
+.svg--subscribe-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--ussd {
+    background: url("../images/icons/sprite.svg") 50% 0 no-repeat;
+}
+
+.svg--ussd-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--webhooks {
+    background: url("../images/icons/sprite.svg") 33.333333333333336% 80% no-repeat;
+}
+
+.svg--webhooks-dims {
+    width: 48px;
+    height: 48px;
+}
+
+.svg--zero-setup {
+    background: url("../images/icons/sprite.svg") 100% 0 no-repeat;
+}
+
+.svg--zero-setup-dims {
+    width: 48px;
+    height: 48px;
+}
+
